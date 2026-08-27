@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>$NGAKAK — No Stress. Just Ngakak.</title>
+<meta name="description" content="$NGAKAK — the meme coin for people who are tired of being serious. Fair launch on Pump.fun, Sept 25 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/webp" href="assets/mascot-logo.webp">
+<link rel="apple-touch-icon" href="assets/mascot-logo.webp">
+<meta property="og:title" content="$NGAKAK — No Stress. Just Ngakak.">
+<meta property="og:description" content="More than a meme. More than a coin. A community built around laughter, connection, and creativity. Fair launch on Pump.fun, Sept 25 2026.">
+<meta property="og:image" content="assets/mascot-full.webp">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="noise-bg"></div>
+<div class="grain"></div>
+
+<header>
+  <nav class="wrap">
+    <a href="index.html" class="brand">
+      <img src="assets/mascot-logo.webp" alt="Ngakak mascot logo">
+      <span>$NGAKAK</span>
+    </a>
+    <button class="burger" id="burgerBtn" aria-label="Toggle menu">☰</button>
+    <div class="navlinks" id="navLinks">
+      <a href="index.html#lore" data-i18n="nav_lore">Lore</a>
+      <a href="index.html#howtobuy" data-i18n="nav_buy">How to Buy</a>
+      <a href="tokenomics.html" data-i18n="nav_token">Tokenomics</a>
+      <a href="faq.html" data-i18n="nav_faq">FAQ</a>
+      <a href="memes.html" data-i18n="nav_memes">Memes</a>
+      <a href="roadmap.html" data-i18n="nav_roadmap">Roadmap</a>
+      <div class="lang-toggle">
+        <button id="btnEN" class="active" data-setlang="en">EN</button>
+        <button id="btnID" data-setlang="id">ID</button>
+      </div>
+      <a href="index.html#community" class="nav-cta" data-i18n="nav_cta">Join Community</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero wrap" id="top">
+    <div class="hero-glow"><div class="blob blob-a"></div><div class="blob blob-b"></div></div>
+    <div>
+      <div class="eyebrow"><span class="dot"></span> <span data-i18n="hero_eyebrow">LAUNCHING ON PUMP.FUN · SEPT 25, 2026</span></div>
+      <h1 data-i18n="hero_h1">NO STRESS.<br>JUST <span class="hl">NGAKAK.</span></h1>
+      <p class="tagline" data-i18n="hero_tagline">More than a meme. More than a coin. A community built around laughter, connection, and creativity.</p>
+      <p class="sub" data-i18n="hero_sub">When life feels heavy, pause, breathe, and laugh with us. NGAKAK does not promise to solve your problems — it simply gives you a reason to smile.</p>
+      <div class="hero-ctas">
+        <a href="#howtobuy" class="btn-primary">🚀 <span data-i18n="nav_buy">How to Buy</span></a>
+        <a href="https://x.com/NgakakCoin" target="_blank" rel="noopener" class="btn-ghost">𝕏 <span data-i18n="hero_cta2">Follow @NgakakCoin</span></a>
+      </div>
+      <div class="countdown mono" id="countdown">
+        <div class="cd-box"><div class="cd-num" id="cd-days">--</div><div class="cd-label" data-i18n="cd_days">Days</div></div>
+        <div class="cd-box"><div class="cd-num" id="cd-hours">--</div><div class="cd-label" data-i18n="cd_hours">Hours</div></div>
+        <div class="cd-box"><div class="cd-num" id="cd-mins">--</div><div class="cd-label" data-i18n="cd_mins">Mins</div></div>
+        <div class="cd-box"><div class="cd-num" id="cd-secs">--</div><div class="cd-label" data-i18n="cd_secs">Secs</div></div>
+      </div>
+      <div class="status-line">
+        <span class="mono">system.status:</span> <b class="mono">NO_STRESS_MODE = TRUE</b>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <span class="laugh-burst lb1">HA!</span>
+      <span class="laugh-burst lb2">HAHA!</span>
+      <span class="laugh-burst lb3">HA HA HA!</span>
+      <div class="speech-bubble" id="speechBubble"></div>
+      <img class="tilt" id="mascotTilt" src="assets/mascot-full.webp" alt="Ngakak mascot giving a thumbs up">
+    </div>
+  </section>
+  <p class="tap-hint wrap" data-i18n="tap_hint">👆 tap the mascot</p>
+
+  <div class="marquee">
+    <div class="marquee-track">
+      <span data-i18n="m1">NO STRESS. JUST NGAKAK.</span>
+      <span data-i18n="m2">COMMUNITY FIRST</span>
+      <span data-i18n="m3">BUILT FOR THE PEOPLE</span>
+      <span data-i18n="m4">MEMES POWER</span>
+      <span data-i18n="m5">GOOD VIBES ONLY</span>
+      <span data-i18n="m1">NO STRESS. JUST NGAKAK.</span>
+      <span data-i18n="m2">COMMUNITY FIRST</span>
+      <span data-i18n="m3">BUILT FOR THE PEOPLE</span>
+      <span data-i18n="m4">MEMES POWER</span>
+      <span data-i18n="m5">GOOD VIBES ONLY</span>
+    </div>
+  </div>
+  <div class="marquee marquee-sub reverse">
+    <div class="marquee-track">
+      <span>HA HA HA</span><span>😂</span><span>NGAKAK MULU</span><span>😂</span><span>ZERO STRESS</span><span>😂</span>
+      <span>HA HA HA</span><span>😂</span><span>NGAKAK MULU</span><span>😂</span><span>ZERO STRESS</span><span>😂</span>
+    </div>
+  </div>
+
+  <!-- PILLARS -->
+  <section class="wrap" id="why">
+    <div class="section-label" data-i18n="why_label">WHY NGAKAK</div>
+    <h2 class="section-title" data-i18n="why_title">Laugh. Connect. Build.</h2>
+    <div class="pillars">
+      <div class="pillar">
+        <span class="icon">😄</span>
+        <h3 data-i18n="p1_h">Community First</h3>
+        <p data-i18n="p1_p">A community where people can laugh, share, create, and grow together.</p>
+      </div>
+      <div class="pillar">
+        <span class="icon">🚀</span>
+        <h3 data-i18n="p2_h">Built for the People</h3>
+        <p data-i18n="p2_p">NGAKAK launches simply and transparently, without a reserved team token allocation.</p>
+      </div>
+      <div class="pillar">
+        <span class="icon">🌐</span>
+        <h3 data-i18n="p3_h">Memes Power</h3>
+        <p data-i18n="p3_p">Memes, art, stories, animations, and ideas are part of the NGAKAK Universe.</p>
+      </div>
+      <div class="pillar">
+        <span class="icon">⚡</span>
+        <h3 data-i18n="p4_h">Good Vibes Only</h3>
+        <p data-i18n="p4_p">Good energy, creativity, and respect. No promises of profit — just a reason to laugh.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LORE -->
+  <section class="wrap" id="lore">
+    <div class="lore">
+      <div class="lore-text">
+        <div class="section-label" data-i18n="lore_label">WHAT IS NGAKAK?</div>
+        <h2 class="section-title" data-i18n="lore_title">More than a meme. <span class="hl">More than a coin.</span></h2>
+        <p data-i18n="lore_p1">NGAKAK is a global meme coin brand built around laughter, connection, and creativity. Crypto can be stressful; NGAKAK brings the fun back.</p>
+        <p data-i18n="lore_p2">When you're sad, overwhelmed, confused, or facing problems in life, don't forget to pause. Look at NGAKAK. Take a breath. Have a laugh. And laugh with us. Sometimes all you need is a little reason to smile.</p>
+      </div>
+      <div class="lore-visual">
+        <img src="assets/mascot-logo.webp" alt="Ngakak mascot logo pointing">
+      </div>
+    </div>
+  </section>
+
+  <!-- PROOF NOT PROMISES -->
+  <section class="wrap" id="proof">
+    <div class="section-label" data-i18n="proof_label">TRUST & TRANSPARENCY</div>
+    <h2 class="section-title" data-i18n="proof_title">Proof, not <span class="hl">promises.</span></h2>
+    <p class="section-desc" data-i18n="proof_desc">We don't ask you to trust blindly. We ask you to verify.</p>
+    <div class="pillars">
+      <div class="pillar"><span class="icon">🔍</span><h3 data-i18n="proof1_h">Verify On-Chain</h3><p data-i18n="proof1_p">Supply, transactions, wallet activity, and the contract can be checked independently.</p></div>
+      <div class="pillar"><span class="icon">👛</span><h3 data-i18n="proof2_h">Creator Wallet</h3><p data-i18n="proof2_p">The official creator wallet is public. Any $NGAKAK held by the creator is acquired from the open market.</p></div>
+      <div class="pillar"><span class="icon">🚫</span><h3 data-i18n="proof3_h">No Reserved Team Allocation</h3><p data-i18n="proof3_p">NGAKAK is intended to launch without a reserved dev or team token allocation.</p></div>
+      <div class="pillar"><span class="icon">📜</span><h3 data-i18n="proof4_h">Contract After Launch</h3><p data-i18n="proof4_p">The official contract address will be published only after deployment and should always be verified from official channels.</p></div>
+    </div>
+    <div class="section-desc" style="margin-top:24px;"><strong data-i18n="proof_footer">TRUST THE CODE. NOT THE DEV.</strong></div>
+  </section>
+
+  <!-- HOW TO BUY -->
+  <section class="wrap" id="howtobuy">
+    <div class="section-label" data-i18n="buy_label">GUIDE</div>
+    <h2 class="section-title" data-i18n="buy_title">How to buy <span class="hl">$NGAKAK</span></h2>
+    <p class="section-desc" data-i18n="buy_desc">Just follow these 4 steps once the token goes live on Pump.fun, Sept 25, 2026.</p>
+    <div class="steps">
+      <div class="step"><span class="num">01</span><h4 data-i18n="s1_h">Get a wallet</h4><p data-i18n="s1_p">Download Phantom or another Solana wallet, then create a new one.</p></div>
+      <div class="step"><span class="num">02</span><h4 data-i18n="s2_h">Load up SOL</h4><p data-i18n="s2_p">Buy SOL on your favorite exchange and transfer it to your wallet.</p></div>
+      <div class="step"><span class="num">03</span><h4 data-i18n="s3_h">Open Pump.fun</h4><p data-i18n="s3_p">Search $NGAKAK using the official contract address from our X bio.</p></div>
+      <div class="step"><span class="num">04</span><h4 data-i18n="s4_h">Swap & laugh</h4><p data-i18n="s4_p">Swap your SOL for $NGAKAK, join the community, and get ready to laugh.</p></div>
+    </div>
+  </section>
+
+  <!-- NOTIFY ME -->
+  <section class="wrap" id="notify">
+    <div class="notify-box">
+      <div class="notify-text">
+        <div class="section-label" data-i18n="notify_label">DON'T MISS LAUNCH</div>
+        <h2 class="section-title" data-i18n="notify_title">Get notified <span class="hl">the moment we launch.</span></h2>
+        <p class="section-desc" data-i18n="notify_desc" style="margin-bottom:0;">Drop your email and we'll ping you the second $NGAKAK goes live on Pump.fun. No spam, just launch news.</p>
+      </div>
+      <form id="notifyForm" class="notify-form" name="notify-me" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="notify-me">
+        <p class="hp-field"><label>Don't fill this out: <input name="bot-field"></label></p>
+        <div class="notify-input-row">
+          <input type="email" name="email" id="notifyEmail" required placeholder="you@example.com" data-i18n-placeholder="notify_placeholder">
+          <button type="submit" class="btn-primary" data-i18n="notify_btn">Notify Me</button>
+        </div>
+        <p class="notify-msg" id="notifyMsg"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- COMMUNITY -->
+  <section class="wrap" id="community">
+    <div class="community">
+      <h2 data-i18n="comm_h">Ngakak is better together.</h2>
+      <p data-i18n="comm_p">The official contract address will appear here after launch. Follow @NgakakCoin so you can verify it from an official source.</p>
+      <div class="ca-box">
+        <span class="ca-text" data-i18n="comm_ca">Coming at launch · 09.25.2026 🚀</span>
+        <button id="copyCaBtn" data-i18n="comm_copy">Copy</button>
+      </div>
+      <div class="community-ctas">
+        <a href="https://x.com/NgakakCoin" target="_blank" rel="noopener" class="btn-primary">𝕏 <span data-i18n="comm_cta1">Follow @NgakakCoin</span></a>
+        <a href="https://pump.fun" target="_blank" rel="noopener" class="btn-ghost" data-i18n="comm_cta3">Open Pump.fun</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+<div class="toast" id="toast"></div>
+
+<footer class="wrap">
+  <div class="footer-row">
+    <div class="footer-brand">
+      <img src="assets/mascot-logo.webp" alt="Ngakak logo">
+      <span>$NGAKAK</span>
+    </div>
+    <div class="footer-links">
+      <a href="tokenomics.html">Tokenomics</a>
+      <a href="faq.html">FAQ</a>
+      <a href="memes.html">Memes</a>
+      <a href="https://x.com/NgakakCoin" target="_blank" rel="noopener">X (Twitter)</a>
+    </div>
+  </div>
+  <p class="footer-legal" data-i18n="footer_legal">$NGAKAK is a meme token with no intrinsic utility, made purely for entertainment purposes. Always DYOR (Do Your Own Research) before buying any crypto asset. Nothing on this page is financial advice.</p>
+</footer>
+
+<script src="assets/i18n.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

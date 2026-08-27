@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ — $NGAKAK</title>
+<meta name="description" content="Frequently asked questions about $NGAKAK: rugpull safety, roadmap, contract address, taxes, and how to join the community.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/webp" href="assets/mascot-logo.webp">
+<link rel="apple-touch-icon" href="assets/mascot-logo.webp">
+<meta property="og:title" content="FAQ — $NGAKAK">
+<meta property="og:description" content="Everything you need to know before buying $NGAKAK.">
+<meta property="og:image" content="assets/mascot-full.webp">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="noise-bg"></div>
+<div class="grain"></div>
+
+<header>
+  <nav class="wrap">
+    <a href="index.html" class="brand">
+      <img src="assets/mascot-logo.webp" alt="Ngakak mascot logo">
+      <span>$NGAKAK</span>
+    </a>
+    <button class="burger" id="burgerBtn" aria-label="Toggle menu">☰</button>
+    <div class="navlinks" id="navLinks">
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="index.html#lore" data-i18n="nav_lore">Lore</a>
+      <a href="index.html#howtobuy" data-i18n="nav_buy">How to Buy</a>
+      <a href="tokenomics.html" data-i18n="nav_token">Tokenomics</a>
+      <a href="memes.html" data-i18n="nav_memes">Memes</a>
+      <a href="roadmap.html" data-i18n="nav_roadmap">Roadmap</a>
+      <div class="lang-toggle">
+        <button id="btnEN" class="active" data-setlang="en">EN</button>
+        <button id="btnID" data-setlang="id">ID</button>
+      </div>
+      <a href="index.html#community" class="nav-cta" data-i18n="nav_cta">Join Community</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="wrap page-header">
+    <div class="breadcrumb"><a href="index.html" data-i18n="bc_home">Home</a> / <span data-i18n="faq_page_title">FAQ</span></div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="wrap" id="faq">
+    <div class="section-label" data-i18n="faq_label">FAQ</div>
+    <h2 class="section-title" data-i18n="faq_title">Frequently asked questions.</h2>
+    <div class="faq-list" id="faqList">
+      <div class="faq-item">
+        <button class="faq-q"><span data-i18n="faq_q1">Is this a rugpull?</span><span class="plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq_a1">No one can promise 100% safety in crypto, but the mechanics are built to minimize that risk: fair launch on Pump.fun (no presale, no team allocation), and Liquidity mechanics are handled by Pump.fun; any automatic locking/burning associated with graduation occurs according to Pump.fun's rules and is not an immediate launch-day claim. Still — always DYOR before buying any crypto asset.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span data-i18n="faq_q2">Why no long roadmap?</span><span class="plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq_a2">On purpose. $NGAKAK is honest about what it is: a meme coin for entertainment and community, not a project promising complex 5-year utility. We'd rather focus on community and momentum than make promises we can't keep.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span data-i18n="faq_q3">When does the contract address (CA) appear?</span><span class="plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq_a3">The CA only exists once the token is officially deployed on Pump.fun, planned for Sept 25, 2026. Once live, the address will be auto-updated in the community section and our X bio. Always verify from official sources — never trust a CA from an account claiming to be us.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span data-i18n="faq_q4">Is there a buy/sell tax?</span><span class="plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq_a4">$NGAKAK doesn't add any extra tax on top of what Pump.fun charges. Pump.fun itself takes a standard ~1.25% fee on bonding-curve trades (split between the platform and the creator) — that's Pump.fun's own mechanism, not something we control or add to.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q"><span data-i18n="faq_q5">How do I join the community?</span><span class="plus">+</span></button>
+        <div class="faq-a"><div class="faq-a-inner" data-i18n="faq_a5">Easy — follow us on X at @NgakakCoin. Official links are provided through the website and our verified X account.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA back to buy -->
+  <section class="wrap" style="padding-top:0;">
+    <div class="hero-ctas">
+      <a href="index.html#howtobuy" class="btn-primary">🚀 <span data-i18n="hero_cta1">Buy on Pump.fun</span></a>
+      <a href="tokenomics.html" class="btn-ghost" data-i18n="nav_token">Tokenomics</a>
+    </div>
+  </section>
+</main>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+<div class="toast" id="toast"></div>
+
+<footer class="wrap">
+  <div class="footer-row">
+    <div class="footer-brand">
+      <img src="assets/mascot-logo.webp" alt="Ngakak logo">
+      <span>$NGAKAK</span>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="tokenomics.html">Tokenomics</a>
+      <a href="memes.html">Memes</a>
+      <a href="https://x.com/NgakakCoin" target="_blank" rel="noopener">X (Twitter)</a>
+    </div>
+  </div>
+  <p class="footer-legal" data-i18n="footer_legal">$NGAKAK is a meme token with no intrinsic utility, made purely for entertainment purposes. Always DYOR (Do Your Own Research) before buying any crypto asset. Nothing on this page is financial advice.</p>
+</footer>
+
+<script src="assets/i18n.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

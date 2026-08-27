@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout — $NGAKAK</title>
+<meta name="description" content="Checkout with USDC or USDT on Solana.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/webp" href="assets/mascot-logo.webp">
+<link rel="apple-touch-icon" href="assets/mascot-logo.webp">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="noise-bg"></div>
+<div class="grain"></div>
+
+<header>
+  <nav class="wrap">
+    <a href="index.html" class="brand">
+      <img src="assets/mascot-logo.webp" alt="Ngakak mascot logo">
+      <span>$NGAKAK</span>
+    </a>
+    <button class="burger" id="burgerBtn" aria-label="Toggle menu">☰</button>
+    <div class="navlinks" id="navLinks">
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="store.html" data-i18n="store_page_title">Store</a>
+      <a href="faq.html" data-i18n="nav_faq">FAQ</a>
+      <div class="lang-toggle">
+        <button id="btnEN" class="active" data-setlang="en">EN</button>
+        <button id="btnID" data-setlang="id">ID</button>
+      </div>
+      <a href="index.html#community" class="nav-cta" data-i18n="nav_cta">Join Community</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="wrap page-header">
+    <div class="breadcrumb"><a href="index.html" data-i18n="bc_home">Home</a> / <a href="store.html" data-i18n="store_page_title">Store</a> / <span data-i18n="checkout_page_title">Checkout</span></div>
+  </section>
+
+  <section class="wrap" id="checkout">
+    <div class="section-label" data-i18n="checkout_label">CHECKOUT</div>
+    <h2 class="section-title" data-i18n="checkout_title">Complete your <span class="hl">order.</span></h2>
+
+    <div class="checkout-grid">
+      <!-- Cart summary + order form -->
+      <div>
+        <div class="cart-summary" id="cartSummary"></div>
+
+        <form id="orderForm" class="order-form" name="order-checkout" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="order-checkout">
+          <input type="hidden" name="order-items" id="hiddenOrderItems">
+          <input type="hidden" name="order-total" id="hiddenOrderTotal">
+          <input type="hidden" name="order-currency" id="hiddenOrderCurrency" value="USDC">
+          <p class="hp-field"><label>Don't fill this out: <input name="bot-field"></label></p>
+
+          <label for="ofName" data-i18n="form_name">Full Name</label>
+          <input type="text" name="name" id="ofName" required placeholder="John Doe">
+
+          <label for="ofEmail" data-i18n="form_email">Email</label>
+          <input type="email" name="email" id="ofEmail" required placeholder="you@example.com">
+
+          <label for="ofAddress" data-i18n="form_address">Shipping Address</label>
+          <textarea name="address" id="ofAddress" required placeholder="Street, city, postal code"></textarea>
+
+          <label for="ofCountry" data-i18n="form_country">Country</label>
+          <input type="text" name="country" id="ofCountry" required placeholder="Country">
+
+          <label for="ofTx" data-i18n="form_tx">Transaction Signature (after sending payment)</label>
+          <input type="text" name="tx-signature" id="ofTx" required placeholder="e.g. 5h3s...9kQx">
+
+          <button type="submit" class="btn-primary" style="margin-top:20px;" data-i18n="form_submit">Submit Order</button>
+          <p class="notify-msg" id="orderMsg"></p>
+          <p class="order-note" data-i18n="form_note">After sending payment, paste the transaction signature here along with your shipping details. We manually verify on-chain before shipping — this can take 1-2 days.</p>
+        </form>
+      </div>
+
+      <!-- Payment box -->
+      <div class="pay-box" id="payBox">
+        <div class="section-label" data-i18n="pay_with">PAY WITH</div>
+        <div class="currency-select">
+          <label><input type="radio" name="currency" value="USDC" checked><span>USDC</span></label>
+          <label><input type="radio" name="currency" value="USDT"><span>USDT</span></label>
+        </div>
+        <p style="font-size:0.85rem; opacity:0.75;" data-i18n="pay_scan">Scan or copy the wallet address below, then send the exact amount.</p>
+        <div class="qr-wrap">
+          <img id="payQR" alt="Solana Pay QR code" width="180" height="180">
+        </div>
+        <p class="mono" id="payAmountLabel" style="font-weight:700; color:var(--yolk); margin-bottom:14px;"></p>
+        <div class="wallet-address-box">
+          <span id="walletAddressText">74wZfz9ZhiZPtw5H2o4pHCfCv7aCpgackh3d15kQZ9GK</span>
+          <button id="copyWalletBtn" type="button" data-i18n="wallet_copy">Copy</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+<div class="toast" id="toast"></div>
+
+<footer class="wrap">
+  <div class="footer-row">
+    <div class="footer-brand">
+      <img src="assets/mascot-logo.webp" alt="Ngakak logo">
+      <span>$NGAKAK</span>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="store.html">Store</a>
+      <a href="faq.html">FAQ</a>
+    </div>
+  </div>
+  <p class="footer-legal" data-i18n="footer_legal">$NGAKAK is a meme token with no intrinsic utility, made purely for entertainment purposes. Always DYOR (Do Your Own Research) before buying any crypto asset. Nothing on this page is financial advice.</p>
+</footer>
+
+<script src="assets/i18n.js"></script>
+<script src="assets/store-data.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NGAKAK Holder Program — Founding Collection</title>
+<meta name="description" content="NGAKAK Holder Program: a founding collection for the earliest believers, coming after launch.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/webp" href="assets/mascot-logo.webp">
+<link rel="apple-touch-icon" href="assets/mascot-logo.webp">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  /* ---- Holder Program page-specific pieces, built on top of the shared site theme ---- */
+  .hp-tagline{
+    text-align:center; font-family:'JetBrains Mono'; font-size:0.8rem; letter-spacing:3px;
+    color:var(--yolk); text-transform:uppercase; font-weight:700; margin:18px 0 46px;
+  }
+  .hp-intro{
+    max-width:680px; margin:0 auto 40px; text-align:center; opacity:0.8; font-size:0.98rem; line-height:1.7;
+  }
+  .hp-intro strong{ color:var(--cream); opacity:1; }
+
+  .hp-tiers{
+    display:grid; grid-template-columns:repeat(auto-fit, minmax(260px,1fr)); gap:22px; margin-bottom:44px;
+  }
+  .hp-tier{
+    background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:26px 24px; position:relative; overflow:hidden;
+  }
+  .hp-tier::before{
+    content:''; position:absolute; top:0; left:0; right:0; height:3px; background:linear-gradient(90deg, var(--yolk-dim), var(--yolk));
+  }
+  .hp-tier.elite::before{ background:linear-gradient(90deg, var(--yolk), var(--cream), var(--yolk)); }
+  .hp-tier-name{ font-family:'Bangers'; font-size:1.4rem; color:var(--yolk); letter-spacing:0.5px; margin-bottom:4px; }
+  .hp-tier-slots{ font-family:'JetBrains Mono'; font-size:0.72rem; color:var(--yolk-dim); letter-spacing:1px; text-transform:uppercase; margin-bottom:18px; }
+  .hp-tier-row{ display:flex; justify-content:space-between; font-size:0.88rem; padding:9px 0; border-bottom:1px solid rgba(255,255,255,0.06); }
+  .hp-tier-row:last-of-type{ border-bottom:none; }
+  .hp-tier-row span:first-child{ opacity:0.6; }
+  .hp-tier-row span:last-child{ color:var(--cream); font-weight:600; text-align:right; }
+  .hp-tier-reward{
+    margin-top:16px; padding:12px 14px; background:rgba(255,212,0,0.06); border:1px solid var(--line); border-radius:10px;
+    font-size:0.82rem; color:var(--yolk);
+  }
+  .hp-tier-reward small{ display:block; opacity:0.65; color:var(--cream); font-weight:400; margin-top:5px; font-size:0.74rem; line-height:1.5; }
+
+  .hp-steps{ background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:30px 26px; margin-bottom:36px; }
+  .hp-steps h3{ font-family:'Bangers'; font-size:1.3rem; color:var(--yolk); margin-bottom:20px; letter-spacing:0.5px; }
+  .hp-step{ display:flex; gap:16px; margin-bottom:18px; }
+  .hp-step:last-child{ margin-bottom:0; }
+  .hp-step-num{
+    flex-shrink:0; width:30px; height:30px; border:1px solid var(--yolk); border-radius:50%;
+    display:flex; align-items:center; justify-content:center; color:var(--yolk); font-size:0.8rem; font-weight:700; font-family:'JetBrains Mono';
+  }
+  .hp-step-text strong{ display:block; color:var(--cream); font-size:0.92rem; margin-bottom:2px; }
+  .hp-step-text span{ opacity:0.65; font-size:0.85rem; }
+
+  .hp-cta{
+    text-align:center; padding:34px 20px; border:1px solid var(--line); border-radius:16px;
+    background:linear-gradient(160deg, rgba(255,212,0,0.08), transparent); margin-bottom:10px;
+  }
+  .hp-cta h3{ font-family:'Bangers'; font-size:1.4rem; color:var(--yolk); margin-bottom:8px; }
+  .hp-cta p{ opacity:0.7; font-size:0.9rem; margin-bottom:18px; }
+</style>
+</head>
+<body>
+
+<div class="noise-bg"></div>
+<div class="grain"></div>
+
+<header>
+  <nav class="wrap">
+    <a href="index.html" class="brand">
+      <img src="assets/mascot-logo.webp" alt="Ngakak mascot logo">
+      <span>$NGAKAK</span>
+    </a>
+    <button class="burger" id="burgerBtn" aria-label="Toggle menu">☰</button>
+    <div class="navlinks" id="navLinks">
+      <a href="index.html" data-i18n="nav_home">Home</a>
+      <a href="index.html#lore" data-i18n="nav_lore">Lore</a>
+      <a href="index.html#howtobuy" data-i18n="nav_buy">How to Buy</a>
+      <a href="tokenomics.html" data-i18n="nav_token">Tokenomics</a>
+      <a href="faq.html" data-i18n="nav_faq">FAQ</a>
+      <a href="memes.html" data-i18n="nav_memes">Memes</a>
+      <a href="roadmap.html" data-i18n="nav_roadmap">Roadmap</a>
+      <a href="index.html#community" class="nav-cta" data-i18n="nav_cta">Join Community</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="wrap page-header">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Holder Program</div>
+  </section>
+
+  <section class="wrap" id="holderprogram">
+    <div class="section-label">FOUNDING COLLECTION · COMING AFTER LAUNCH</div>
+    <h2 class="section-title">NGAKAK <span class="hl">Holder Program.</span></h2>
+    <p class="section-desc">Something special is being prepared for the earliest NGAKAK believers — a founding collection for those who become part of our journey from the very beginning. It'll be revealed after launch, with the physical Elite merchandise ready to show first.</p>
+    <div class="hp-tagline">NO STRESS, JUST NGAKAK.</div>
+
+    <p class="hp-intro">
+      <strong>We don't want to sell a promise.</strong> We want to make the reward first, show you what it is, and then open the program. NGAKAK will launch on <strong>25 September 2026</strong>. From <strong>25–28 September</strong>, we will observe the launch and community before opening any Holder Program slots.
+    </p>
+
+    <div class="disclaimer-box">
+      <span>📣</span>
+      <span><strong>Reveal principle:</strong> Elite merchandise will be produced and physically ready (or verified by a real sample) before the Holder Program is actively promoted. Details, claim instructions, and the official Streamflow link will be announced through official NGAKAK channels only.</span>
+    </div>
+
+    <div class="hp-tiers">
+      <div class="hp-tier elite">
+        <div class="hp-tier-name">NGAKAK Elite</div>
+        <div class="hp-tier-slots">3 slots · Planned after launch</div>
+        <div class="hp-tier-row"><span>Lock</span><span>25,000,000 $NGAKAK</span></div>
+        <div class="hp-tier-row"><span>Cliff</span><span>Begins Month 13</span></div>
+        <div class="hp-tier-row"><span>Vesting</span><span>Linear through Month 36</span></div>
+        <div class="hp-tier-reward">
+          Numbered Founding Collection card + premium physical reward
+          <small>Physical reward is funded from the founder's personal promotional budget and will be officially confirmed before claims open.</small>
+        </div>
+      </div>
+
+      <div class="hp-tier">
+        <div class="hp-tier-name">NGAKAK Premium</div>
+        <div class="hp-tier-slots">22 slots · Planned after launch</div>
+        <div class="hp-tier-row"><span>Lock</span><span>5,000,000 $NGAKAK</span></div>
+        <div class="hp-tier-row"><span>Cliff</span><span>Begins Month 9</span></div>
+        <div class="hp-tier-row"><span>Vesting</span><span>Linear through Month 18</span></div>
+        <div class="hp-tier-reward">
+          Exclusive NFT badge + special community role
+          <small>Final claim mechanics and official links will be announced when the program opens.</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="hp-steps">
+      <h3>Planned Activation</h3>
+      <div class="hp-step"><div class="hp-step-num">1</div><div class="hp-step-text"><strong>Launch $NGAKAK</strong><span>25 September 2026 on Pump.fun.</span></div></div>
+      <div class="hp-step"><div class="hp-step-num">2</div><div class="hp-step-text"><strong>Observe</strong><span>25–28 September: monitor launch conditions, holder distribution, community reaction, and technical health.</span></div></div>
+      <div class="hp-step"><div class="hp-step-num">3</div><div class="hp-step-text"><strong>Prepare the real merchandise</strong><span>Finalize and produce the Elite physical reward before the program is promoted.</span></div></div>
+      <div class="hp-step"><div class="hp-step-num">4</div><div class="hp-step-text"><strong>Reveal & open</strong><span>Show the actual merchandise, publish final terms, then open the limited slots through the official Streamflow link.</span></div></div>
+    </div>
+
+    <div class="disclaimer-box">
+      <span>🔒</span>
+      <span><strong>Planned maximum:</strong> 185,000,000 $NGAKAK (18.5% of the 1,000,000,000 supply) across 25 wallets, using staged cliff and linear vesting rather than an immediate unlock. Final activation remains subject to the official announcement after launch.</span>
+    </div>
+
+    <div class="infographic-wrap">
+      <img src="assets/holder-program-infographic.png" alt="NGAKAK Holder Program infographic" loading="lazy" style="width:min(100%, 620px);">
+    </div>
+
+    <div class="hp-cta">
+      <h3>Not open yet.</h3>
+      <p>Follow <strong>@NgakakCoin</strong> for the official reveal. Never use an unofficial lock link.</p>
+      <a href="https://x.com/NgakakCoin" target="_blank" rel="noopener" class="btn-primary">𝕏 Follow @NgakakCoin</a>
+    </div>
+  </section>
+</main>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+<div class="toast" id="toast"></div>
+
+<footer class="wrap">
+  <div class="footer-row">
+    <div class="footer-brand">
+      <img src="assets/mascot-logo.webp" alt="Ngakak logo">
+      <span>$NGAKAK</span>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="tokenomics.html">Tokenomics</a>
+      <a href="faq.html">FAQ</a>
+      <a href="memes.html">Memes</a>
+      <a href="https://x.com/NgakakCoin" target="_blank" rel="noopener">X (Twitter)</a>
+    </div>
+  </div>
+  <p class="footer-legal">NGAKAK · Launch 25 September 2026 · Founding Collection reveal after launch. $NGAKAK is a meme token with no intrinsic utility, made purely for entertainment purposes. Always DYOR before buying any crypto asset. Nothing on this page is financial advice.</p>
+</footer>
+
+<script src="assets/i18n.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
